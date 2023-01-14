@@ -1,0 +1,578 @@
+@import 'utilities.css';
+
+    
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    color: var(--ternary);
+}
+header{
+    background-color: var(--dark);
+    width: 102%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    
+   
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    /* color:var(--pure); */
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+header nav .left a:hover{
+    color: var(--primary)
+}
+
+header nav .right {
+    position: absolute;
+    right: 0;
+}
+
+header nav {
+    padding: 1rem 0;
+
+}
+
+header nav .branding{
+    margin-right: 1rem;
+}
+/* these classes are bootsrap classes custmized for us */
+.navbar-toggler{
+    background-color: var(--primary) !important;
+}
+.offcanvas{
+    background-color: transparent !important;
+}
+.offcanvas-title{
+    color: var(--pure);
+}
+
+.hero .left img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 20px var(--primary), 0px 0px 20px var(--pure);
+    transition: all .3s;
+    
+}
+
+.hero .left img:hover{
+    
+    transform: scale(1.05);
+    
+}
+
+.hero .left{
+    padding-left: 2.5rem;
+}
+.hero .right{
+    color: var(--pure);
+    padding-top: 8rem;
+    /* position: relative;
+    top: 5rem; */
+    
+    
+}
+
+.hero .right h6{
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 3.5rem;
+    font-weight: 100;
+    line-height: 1.1;
+    
+
+}
+
+.hero .right h1 span{
+    color:var(--primary)
+
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero{
+    padding: 3rem 0 10rem 0;
+    
+}
+
+.hero .right {
+    margin-top: -8rem;
+}
+
+section{
+    padding: 6rem 0;
+    
+
+}
+
+.man-2{
+    text-align: center;
+    justify-content: center;
+}
+
+section.about .about-me-img{
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+}
+
+section.about p{
+    font-family: 'loto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+section.about .social{
+    display: flex;
+    margin-top: 4rem;
+}
+
+section.about .social a img{
+    width: 1.8rem;
+    margin: .2rem;
+    transition: all .2s;
+}
+
+section.about .social a img:hover{
+    transform: scale(1.2);
+}
+a{
+    /* background-color: var(--dark); */
+
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+section.services {
+    background-color: var(--light);
+    width: 102%;
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'lato', sans-serif;
+    margin-bottom: 8rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap:6rem ;
+}
+
+section.services .card-wrapper .card{
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s;
+    
+}
+
+section.services .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    box-shadow:1px 1px 5px grey;
+    padding: 1rem;
+
+}
+
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+    background-color: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+
+}
+
+
+
+/*------------------------------------------2nd PAGE ----------------------------------------------*/
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./image/airplane.jpeg );
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+    width: 102%;
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'loto', sans-serif;
+}
+
+section .slide-local img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section .slider-local .slide-local{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem;
+
+}
+
+section .slider-local .slide-local p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+section .slider-local .slide-local span{
+    font-size: 0.8rem;
+}
+
+.dots{
+    list-style-type: none;
+    display: flex! important;
+    justify-content: center;
+    margin-top: 3rem;
+    
+}
+
+.dots button{
+    font-size: 0;
+    width: 8px !important;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;    
+    outline: none;
+    background-color: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.dots li.slick-active button{
+    background: var(--primary);
+    width: 20px !important;
+    
+}
+
+section.work{
+    background-color: var(--light);
+    width: 102%;
+}
+
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all 0.3s ease;
+
+}
+
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+
+section.work .card-wrapper .card .overlay a{
+    text-decoration: none;
+    background: transparent;
+    color: var(--secondary);
+
+}
+
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+
+section.blog{
+    background: var(--dark);
+    width: 100%;
+    word-wrap: break-word;
+    width: 102%;
+}
+
+section.blog .section-heading{
+    color: var(--pure);
+}
+
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    
+}
+
+section.blog .card-wrapper .card{
+    background-color: var(--pure);
+}
+
+section.blog .card-wrapper .card .card-content{
+    padding: 2rem;
+}
+
+section.blog .container .row{
+    justify-content: center;
+    gap: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.blog .card-wrapper .card .card-content a{
+    color: var(--secondary);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+
+section.blog .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 0.8rem;
+}
+
+
+.read-more{
+    color: var(--secondary);
+    text-decoration: dashed;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+section.contact .card-wrapper .card{
+    text-align: center !important;
+    padding: 1rem;
+
+
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+    width: 6rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem ;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column  ;
+    
+    
+    
+}
+
+section.contact input{
+    padding: 0.5rem;
+    border:  1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border:  1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
+    outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding:5rem 0;
+    width: 102%;
+}
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 150px;
+    
+    
+}
+
+footer .footer-socials a {
+    margin-right: 1rem;
+    
+}
+
+footer .footer-socials img{
+    width: 2.5rem;
+    background-color: var(--primary);
+    padding: .2rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--primary);
+    transition: all .3s;
+}
+
+footer .footer-socials img:hover{
+    transform: scale(1.1);
+}
+
+footer .footer-socials{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+
+footer .copyright{
+    color: var(--ternary);
+}
